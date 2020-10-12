@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@model ContactInfo;
+
+@section heading{
+    <h1>Contact Me</h1>
+}
+
+<div class="contactContainer">
+    <div class="contactRow">
+        <span class="label">Phone</span>
+        <span class="value">@Model.Phone</span>
+    </div>
+    <div class="contactRow">
+        <span class="label">Email</span>
+        <span class="value">@Model.Email</span>
+    </div>
+    <div class="contactRow">
+        <span class="label">Facebook</span>
+        <span class="value">@Model.Facebook</span>
+    </div>
+</div>

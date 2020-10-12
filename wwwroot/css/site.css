@@ -1,0 +1,48 @@
+﻿body {
+    background-color: #e9e9e9;
+}
+
+.navbar {
+    justify-content: start;
+    align-items: baseline;
+}
+
+.nav-link {
+    color: lightgray;
+}
+
+.navbar a.brand {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+main {
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+header,
+main {
+    margin: 0 4rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+.contactContainer {
+    display: flex;
+}
+
+.contactContainer .contactRow {
+
+}

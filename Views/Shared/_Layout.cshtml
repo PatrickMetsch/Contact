@@ -1,0 +1,28 @@
+﻿@{
+    string action = ViewContext.RouteData.Values["action"].ToString();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Contact</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="nav-link brand" href="/">My Website</a>
+            <a class="nav-link @(action == "Index" ? "active" : "")" asp-action="Index">Home</a>
+            <a class="nav-link @(action == "About" ? "active" : "")" asp-action="About">About</a>
+            <a class="nav-link @(action == "Contact" ? "active" : "")" asp-action="Contact">Contact</a>
+        </nav>
+        <header>
+            @RenderSection("heading", true)
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+    </body>
+</html>
